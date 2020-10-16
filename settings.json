@@ -39,7 +39,6 @@
   "materialTheme.accent": "Remove accents",
   "workbench.colorCustomizations": {},
   "workbench.startupEditor": "newUntitledFile",
-  "editor.snippetSuggestions": "top",
   "editor.suggest.maxVisibleSuggestions": 5,
   "editor.suggest.snippetsPreventQuickSuggestions": false,
   // "editor.tabCompletion": true,
@@ -143,5 +142,9 @@
   },
   "[cpp]": {
     "editor.defaultFormatter": "xaver.clang-format"
+  },
+  "editor.snippetSuggestions": "top",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }

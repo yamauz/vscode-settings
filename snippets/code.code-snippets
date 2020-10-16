@@ -32,6 +32,26 @@
     "body": ["${1:cond} ? ${2:true} : ${3:false}"]
   },
   "if": {
+    "prefix": "if",
+    "body": ["if($1) {$2}"]
+  },
+  "else": {
+    "prefix": "el",
+    "body": ["else {$1}"]
+  },
+  "if equal": {
+    "prefix": "ifee",
+    "body": ["if($1 == $2) {$3}"]
+  },
+  "if not equal": {
+    "prefix": "ifne",
+    "body": ["if($1 != $2) {$3}"]
+  },
+  "if not": {
+    "prefix": "ifn",
+    "body": ["if(!$1) {$2}"]
+  },
+  "if return;": {
     "prefix": "ifr",
     "body": ["if($1) return $2"]
   },
@@ -315,21 +335,6 @@
     "scope": "cpp",
     "prefix": "uns",
     "body": ["using namespace std;", "$0"]
-  },
-  "cin >>": {
-    "scope": "cpp",
-    "prefix": "cin",
-    "body": ["cin >> ${1:name};", "$0"]
-  },
-  "cout <<": {
-    "scope": "cpp",
-    "prefix": "cou",
-    "body": ["cout << ${1:name};", "$0"]
-  },
-  "cout << endl": {
-    "scope": "cpp",
-    "prefix": "coue",
-    "body": ["cout << ${1:name} << endl;"]
   },
   "arr": {
     "scope": "cpp",

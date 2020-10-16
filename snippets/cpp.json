@@ -1,1 +1,46 @@
-{}
+{
+  "int equal": {
+    "prefix": "ie",
+    "body": ["int $1 = $0;"]
+  },
+  "string equal": {
+    "prefix": "se",
+    "body": ["srting $1 = $0;"]
+  },
+  "int foo": {
+    "prefix": "ifoo",
+    "body": ["int foo;"]
+  },
+  "int bar": {
+    "prefix": "ibar",
+    "body": ["int bar;"]
+  },
+  "int baz": {
+    "prefix": "ibaz",
+    "body": ["int baz;"]
+  },
+  "string foo": {
+    "prefix": "sfoo",
+    "body": ["string foo;"]
+  },
+  "string bar": {
+    "prefix": "sbar",
+    "body": ["string bar;"]
+  },
+  "string baz": {
+    "prefix": "sbaz",
+    "body": ["string baz;"]
+  },
+  "cin >>": {
+    "prefix": "cin",
+    "body": ["cin >> ${1:name};", "$0"]
+  },
+  "cout <<": {
+    "prefix": "cou",
+    "body": ["cout << ${1:name};", "$0"]
+  },
+  "cout << endl": {
+    "prefix": "coue",
+    "body": ["cout << ${1:name} << endl;"]
+  }
+}
