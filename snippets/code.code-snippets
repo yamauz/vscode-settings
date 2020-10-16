@@ -1,0 +1,359 @@
+{
+  "single quotation": {
+    "prefix": "j",
+    "body": ["'$1'"]
+  },
+  "double quotation": {
+    "prefix": "jj",
+    "body": ["\"$1\""]
+  },
+  "template literal": {
+    "prefix": "jjj",
+    "body": ["`$1`"]
+  },
+  "template literal variable": {
+    "prefix": "$",
+    "body": ["${$1}"]
+  },
+  "brakets1": {
+    "prefix": "k",
+    "body": ["{$1}"]
+  },
+  "brakets2": {
+    "prefix": "kk",
+    "body": ["($1)"]
+  },
+  "brakets3": {
+    "prefix": "kkk",
+    "body": ["[$1]"]
+  },
+  "conditional operator": {
+    "prefix": "co",
+    "body": ["${1:cond} ? ${2:true} : ${3:false}"]
+  },
+  "if": {
+    "prefix": "ifr",
+    "body": ["if($1) return $2"]
+  },
+  "and": {
+    "prefix": "and",
+    "body": ["$1 && $2"]
+  },
+  "not": {
+    "prefix": "n",
+    "body": ["!$1"]
+  },
+  "or": {
+    "prefix": "or",
+    "body": ["$1 || $2 "]
+  },
+  "less than": {
+    "prefix": "lt",
+    "body": ["$1 < $2 "]
+  },
+  "greater than": {
+    "prefix": "gt",
+    "body": ["$1 > $2 "]
+  },
+  "greater equal": {
+    "prefix": "gt",
+    "body": ["$1 >= $2 "]
+  },
+  "less equal": {
+    "prefix": "gt",
+    "body": ["$1 <= $2 "]
+  },
+  "equal": {
+    "prefix": "e",
+    "body": ["$1 = $2"]
+  },
+  "double equal": {
+    "prefix": "ee",
+    "body": ["$1 == $2"]
+  },
+  "triple equal": {
+    "prefix": "eee",
+    "body": ["$1 === $2"]
+  },
+  "equal null": {
+    "prefix": "eeen",
+    "body": ["$1 === null"]
+  },
+  "equal undefined": {
+    "prefix": "eeeu",
+    "body": ["$1 === undefined"]
+  },
+  "not equal": {
+    "prefix": "ne",
+    "body": ["$1 != $2"]
+  },
+  "not equal null": {
+    "prefix": "neen",
+    "body": ["$1 !== null"]
+  },
+  "not equal undefined": {
+    "prefix": "neeu",
+    "body": ["$1 === undefined"]
+  },
+  "add": {
+    "prefix": "a",
+    "body": ["$1 + $2"]
+  },
+  "subtraction": {
+    "prefix": "s",
+    "body": ["$1 - $2"]
+  },
+  "multiply": {
+    "prefix": "m",
+    "body": ["$1 * $2 "]
+  },
+  "division": {
+    "prefix": "d",
+    "body": ["$1 / $2"]
+  },
+  "division remainder": {
+    "prefix": "dr",
+    "body": ["$1 % $2"]
+  },
+  "const": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "c",
+    "body": ["const $1 = "]
+  },
+  "return": {
+    "prefix": "r",
+    "body": ["return ${1:0;}"]
+  },
+  "Print to console": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "lln",
+    "body": ["console.log('${TM_LINE_NUMBER}')"]
+  },
+  "Print to console2": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "l",
+    "body": ["console.log($1)"]
+  },
+  "Print to console(cyan)": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "lc",
+    "body": ["console.log('\\x1b[36m%s\\x1b[0m','$1')"]
+  },
+  "Print to console(yellow)": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "ly",
+    "body": ["console.log('\\x1b[43m\\x1b[0m','$1')"]
+  },
+  "function": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact,json",
+    "prefix": "f",
+    "body": ["($1) => $2"]
+  },
+  "async function": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "af",
+    "body": ["async ($1) => $2"]
+  },
+  "import": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "ip",
+    "body": ["import $1 from '$2'"]
+  },
+  "win.webContents.send": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "wcs",
+    "body": ["win.webContents.send('test', $1);"]
+  },
+  "module.exports": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "me",
+    "body": ["module.exports = $0"]
+  },
+  "class": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "class",
+    "body": ["class $1 {", "  $2", "}"]
+  },
+  "constructor": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "cs",
+    "body": ["constructor ($1) {", "  $2", "}"]
+  },
+  "require": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "req",
+    "body": ["require('$1');"]
+  },
+  "styled-component": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "sc",
+    "body": ["const $1 = styled.${2:div}`", "  $3", "`"]
+  },
+  "component-template": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "!!",
+    "body": [
+      "// @import //",
+      "",
+      "// @import - modules //",
+      "import React, { useEffect, useState } from \"react\";",
+      "import { useDispatch, useSelector } from \"react-redux\";",
+      "import styled from \"@emotion/styled\";",
+      "",
+      "// @import - components //",
+      "",
+      "// @import - utility //",
+      "",
+      "// @style //",
+      "",
+      "// @component //",
+      "",
+      "const Component = (props) => {",
+      "  // @hooks //",
+      "",
+      "  // @functions //",
+      "",
+      "  // @return //",
+      "",
+      "  return <></>;",
+      "};",
+      "",
+      "// @export //",
+      "export default Component;"
+    ]
+  },
+  "import react": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "ipr",
+    "body": [
+      "import React, { useEffect, useState, useCallback, useRef } from \"react\";"
+    ]
+  },
+  "import react-redux": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "iprd",
+    "body": ["import { useDispatch, useSelector } from \"react-redux\";"]
+  },
+  "import emotion styled": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "ipe",
+    "body": ["import styled from \"@emotion/styled\";"]
+  },
+  "import styled-components": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "ips",
+    "body": ["import styled from \"styled-components\";"]
+  },
+  "useState": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "us",
+    "body": ["const [${1:state}, ${2:setState}] = useState(${3:initialState});"]
+  },
+  "useEffect": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "ue",
+    "body": ["useEffect(() => {", "  $1", "}, ${2:[]});"]
+  },
+  "useDispatch": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "ud",
+    "body": ["const dispatch = useDispatch();"]
+  },
+  "useSelector": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "usl",
+    "body": [
+      "const ${1:prop} = useSelector((state) => state.${2:slice}.${1:prop})"
+    ]
+  },
+  "fragment": {
+    "scope": "typescript,javascript,typescriptreact,javascriptreact",
+    "prefix": "frag",
+    "body": ["<>$1</>"]
+  },
+  "String": {
+    "scope": "cpp",
+    "prefix": "st",
+    "body": ["string ${1:name};", "$0"]
+  },
+  "String equal": {
+    "scope": "cpp",
+    "prefix": "se",
+    "body": ["string ${1:name} = ${2:value};", "$0"]
+  },
+  "Int": {
+    "scope": "cpp",
+    "prefix": "in",
+    "body": ["int ${1:name};", "$0"]
+  },
+  "Bool": {
+    "scope": "cpp",
+    "prefix": "bo",
+    "body": ["bool ${1:name};", "$0"]
+  },
+  "Bool equal": {
+    "scope": "cpp",
+    "prefix": "be",
+    "body": ["bool ${1:name} = ${2:value};", "$0"]
+  },
+  "Int equal": {
+    "scope": "cpp",
+    "prefix": "ie",
+    "body": ["int $1 = $2;", "$0"]
+  },
+  "Include iostream": {
+    "scope": "cpp",
+    "prefix": "icis",
+    "body": ["#include <iostream>", "$0"]
+  },
+  "Include string": {
+    "scope": "cpp",
+    "prefix": "icst",
+    "body": ["#include <string>", "$0"]
+  },
+  "Using namespace std;": {
+    "scope": "cpp",
+    "prefix": "uns",
+    "body": ["using namespace std;", "$0"]
+  },
+  "cin >>": {
+    "scope": "cpp",
+    "prefix": "cin",
+    "body": ["cin >> ${1:name};", "$0"]
+  },
+  "cout <<": {
+    "scope": "cpp",
+    "prefix": "cou",
+    "body": ["cout << ${1:name};", "$0"]
+  },
+  "cout << endl": {
+    "scope": "cpp",
+    "prefix": "coue",
+    "body": ["cout << ${1:name} << endl;"]
+  },
+  "arr": {
+    "scope": "cpp",
+    "prefix": "arr",
+    "body": ["${1:arr}[${2:i}]"]
+  },
+  "Function": {
+    "scope": "cpp",
+    "prefix": "f",
+    "body": ["${1:type} ${2:func}($3)", "{", "    ${4:code}", "}"]
+  },
+  "template": {
+    "scope": "cpp",
+    "prefix": "!",
+    "body": [
+      "#include <string>",
+      "#include <iostream>",
+      "",
+      "using namespace std;",
+      "",
+      "int main()",
+      "{",
+      "    return 0;",
+      "}"
+    ]
+  }
+}

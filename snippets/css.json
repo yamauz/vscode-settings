@@ -1,0 +1,70 @@
+{
+  "flex-center": {
+    "prefix": "fc",
+    "body": [
+      "display: flex;",
+      "justify-content: center;",
+      "align-items: center;"
+    ]
+  },
+  "justify-content(space-between)": {
+    "prefix": "jcsb",
+    "body": [
+      "justify-content: ${1:space-between};"
+    ]
+  },
+  "justify-content(space-around)": {
+    "prefix": "jcsa",
+    "body": [
+      "justify-content: ${1:space-around};"
+    ]
+  },
+  "justify-content(center>": {
+    "prefix": "jcc",
+    "body": [
+      "justify-content: ${1:center};"
+    ]
+  },
+  "align-items": {
+    "prefix": "aic",
+    "body": [
+      "align-items: ${1:center}"
+    ]
+  },
+  "height": {
+    "prefix": "h",
+    "body": [
+      "height: ${1:100%};"
+    ]
+  },
+  "width": {
+    "prefix": "w",
+    "body": [
+      "width: ${1:100%};"
+    ]
+  },
+  "border solid": {
+    "prefix": "b",
+    "body": [
+      "border: solid 1px ${1:red};"
+    ]
+  },
+  "position relative": {
+    "prefix": "por",
+    "body": [
+      "position: ${1:relative};"
+    ]
+  },
+  "position absolute": {
+    "prefix": "poa",
+    "body": [
+      "position: ${1:absolute};"
+    ]
+  },
+  "background-color": {
+    "prefix": "bc",
+    "body": [
+      "background-color: ${1:red};"
+    ]
+  }
+}

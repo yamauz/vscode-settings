@@ -1,0 +1,14 @@
+{
+  "code": {
+    "prefix": "c",
+    "body": ["```${1:javascript}", "$2", " ```"]
+  },
+  "kbd": {
+    "prefix": "k",
+    "body": ["<kbd>$1</kbd>"]
+  },
+  "anchor": {
+    "prefix": "a",
+    "body": ["参考："]
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "files.encoding": "utf8bom",
+  "window.zoomLevel": -1,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "vue-html": "html"
+  },
+  "emmet.syntaxProfiles": {
+    "html": {
+      "attr_quotes": "single"
+    },
+    "jsx": {
+      "self_closing_tag": true
+    }
+  },
+  // システムのclipboardにコピー
+  "vim.useSystemClipboard": true,
+  "vim.hlsearch": true,
+  // easymotion
+  "vim.leader": "<space>",
+  "vim.easymotion": true,
+  "vim.easymotionKeys": "sdfghjkl",
+  // "vim.easymotionMarkerBackgroundColor": "#ffffff",
+  // "vim.easymotionMarkerForegroundColorOneChar": "red",
+  // "vim.easymotionMarkerForegroundColorTwoChar": "green",
+  "vim.easymotionMarkerForegroundColorOneChar": "rgba(0,240,170,0.9)", //一文字目の色
+  "vim.easymotionMarkerForegroundColorTwoChar": "rgba(0,240,170,0.9)", //二文字目の色
+  "vim.easymotionMarkerBackgroundColor": "", //背景色
+  "vim.easymotionMarkerWidthPerChar": 19, //各文字に割り当てられている幅
+  "vim.easymotionMarkerHeight": 0, //マーカーの高さ
+  "vim.easymotionMarkerFontSize": "18", //フォントサイズ
+  "vim.easymotionMarkerFontWeight": "normal", //フォントの太さ
+  // "vim.easymotionKeys"                        : "asdfhjklwqeruioopghty;",                      //マーカーに使用される文字列
+  "vim.easymotionMarkerYOffset": 13.5, //高さのずれ修正
+  "vim.whichwrap": "h,l",
+  "vim.handleKeys": {
+    "<C-w>": false
+  },
+  "materialTheme.accent": "Remove accents",
+  "workbench.colorCustomizations": {},
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.snippetSuggestions": "top",
+  "editor.suggest.maxVisibleSuggestions": 5,
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  // "editor.tabCompletion": true,
+  // "editor.snippetSuggestions": "none",
+  // "editor.quickSuggestions": false,
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.colorTheme": "FireFly Pro Midnight",
+  "workbench.activityBar.visible": true,
+  "editor.minimap.enabled": false,
+  "workbench.statusBar.visible": true,
+  "markdown-checkbox.typeOfBulletPoint": "-",
+  "glassit.alpha": 245,
+  "powershell.startAutomatically": false,
+  "editor.formatOnSave": true,
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // "[javascript]": {
+  //   "editor.defaultFormatter": "persoderlind.vscode-phpcbf"
+  // }
+  "C_Cpp.intelliSenseCacheSize": 0,
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "terminal.integrated.rendererType": "dom",
+  "better-comments.tags": [
+    {
+      "tag": "@hooks",
+      "color": "white",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "#2f93be",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "@component",
+      "color": "white",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "#2ec047",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "@functions",
+      "color": "white",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "#de7073",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "@import",
+      "color": "white",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "#95c02e",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "@export",
+      "color": "white",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "#c1992d",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "@return",
+      "color": "white",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "#c4362b",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "@function",
+      "color": "white",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "#7e28c6",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "@style",
+      "color": "white",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "#9b27c7",
+      "bold": false,
+      "italic": false
+    }
+  ],
+  "editor.renderWhitespace": "all",
+  "editor.fontFamily": "Input, Consolas, 'Courier New', monospace",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[cpp]": {
+    "editor.defaultFormatter": "xaver.clang-format"
+  }
+}

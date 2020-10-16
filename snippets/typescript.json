@@ -1,0 +1,224 @@
+{
+	"single quotation": {
+		"prefix": "j",
+		"body": [
+			"'$1'"
+		]
+	},
+	"double quotation": {
+		"prefix": "jj",
+		"body": [
+			"\"$1\""
+		]
+	},
+	"template literal": {
+		"prefix": "jjj",
+		"body": [
+			"`$1`"
+		]
+	},
+	"template literal variable": {
+		"prefix": "$",
+		"body": [
+			"${$1}"
+		]
+	},
+	"brakets1": {
+		"prefix": "k",
+		"body": [
+			"{$1}"
+		]
+	},
+	"brakets2": {
+		"prefix": "kk",
+		"body": [
+			"($1)"
+		]
+	},
+	"brakets3": {
+		"prefix": "kkk",
+		"body": [
+			"[$1]"
+		]
+	},
+	"if": {
+		"prefix": "iff",
+		"body": [
+			"if(${1:cond})"
+		]
+	},
+	"less than": {
+		"prefix": "lt",
+		"body": [
+			"${1:x} < ${2:y} "
+		]
+	},
+	"greater than": {
+		"prefix": "gt",
+		"body": [
+			"${1:x} > ${2:y} "
+		]
+	},
+	"greater equal": {
+		"prefix": "gt",
+		"body": [
+			"${1:x} >= ${2:y} "
+		]
+	},
+	"less equal": {
+		"prefix": "gt",
+		"body": [
+			"${1:x} <= ${2:y} "
+		]
+	},
+	"not equal": {
+		"prefix": "ne",
+		"body": [
+			"${1:x} != ${2:y} "
+		]
+	},
+	"equal": {
+		"prefix": "e",
+		"body": [
+			"${1:x}=${2:y}"
+		]
+	},
+	"double equal": {
+		"prefix": "ee",
+		"body": [
+			"${1:x} == ${2:y}"
+		]
+	},
+	"triple equal": {
+		"prefix": "eee",
+		"body": [
+			"${1:x} === ${2:y}"
+		]
+	},
+	"add": {
+		"prefix": "a",
+		"body": [
+			"${1:x} + ${2:y} "
+		]
+	},
+	"subtraction": {
+		"prefix": "s",
+		"body": [
+			"${1:x} - ${2:y} "
+		]
+	},
+	"multiply": {
+		"prefix": "m",
+		"body": [
+			"${1:x} * ${2:y} "
+		]
+	},
+	"division": {
+		"prefix": "d",
+		"body": [
+			"${1:x} / ${2:y} "
+		]
+	},
+	"division remainder": {
+		"prefix": "dr",
+		"body": [
+			"${1:x} % ${2:y} "
+		]
+	},
+	"const": {
+		"prefix": "c",
+		"body": [
+			"const $1 = "
+		]
+	},
+	"return": {
+		"prefix": "r",
+		"body": [
+			"return $1"
+		]
+	},
+	"Print to console": {
+		"prefix": "lln",
+		"body": [
+			"console.log('${TM_LINE_NUMBER}')"
+		],
+	},
+	"Print to console2": {
+		"prefix": "l",
+		"body": [
+			"console.log($1)"
+		],
+	},
+	"Print to console(cyan)": {
+		"prefix": "lc",
+		"body": [
+			"console.log('\\x1b[36m%s\\x1b[0m','$1')"
+		],
+	},
+	"Print to console(yellow)": {
+		"prefix": "ly",
+		"body": [
+			"console.log('\\x1b[43m\\x1b[0m','$1')"
+		],
+	},
+	"arrow function": {
+		"prefix": "f",
+		"body": [
+			"($1) => {$2}"
+		],
+	},
+	"function test": {
+		"prefix": "af",
+		"body": [
+			"function $1($2){$3}"
+		],
+	},
+	"import": {
+		"prefix": "ip",
+		"body": [
+			"import $1 from '$2'"
+		],
+	},
+	"win.webContents.send": {
+		"prefix": "wcs",
+		"body": [
+			"win.webContents.send('test', $1);"
+		],
+	},
+	"module.exports": {
+		"prefix": "me",
+		"body": [
+			"module.exports = $0"
+		],
+	},
+	"class": {
+		"prefix": "class",
+		"body": [
+			"class $1 {",
+			"  $2",
+			"}"
+		],
+	},
+	"constructor": {
+		"prefix": "cs",
+		"body": [
+			"constructor ($1) {",
+			"  $2",
+			"}"
+		],
+	},
+	"require": {
+		"prefix": "req",
+		"body": [
+			"require('$1');"
+		],
+	},
+	"styled-component": {
+		"prefix": "sc",
+		"body": [
+			"const $1 = styled.${2:div}`",
+			"  $3",
+			"`"
+		]
+	}
+}
