@@ -43,17 +43,41 @@
     "prefix": "ifee",
     "body": ["if($1 == $2) {$3}"]
   },
+  "if greater equal": {
+    "prefix": "ifge",
+    "body": ["if($1 >= $2) {$3}"]
+  },
+  "if less equal": {
+    "prefix": "ifle",
+    "body": ["if($1 <= $2) {$3}"]
+  },
+  "if greater": {
+    "prefix": "ifg",
+    "body": ["if($1 > $2) {$3}"]
+  },
+  "if less": {
+    "prefix": "ifl",
+    "body": ["if($1 < $2) {$3}"]
+  },
   "if not equal": {
     "prefix": "ifne",
     "body": ["if($1 != $2) {$3}"]
   },
+  "if true": {
+    "prefix": "ift",
+    "body": ["if($1) {$2}"]
+  },
   "if not": {
-    "prefix": "ifn",
+    "prefix": "iff",
     "body": ["if(!$1) {$2}"]
   },
   "if return;": {
     "prefix": "ifr",
     "body": ["if($1) return $2"]
+  },
+  "while true": {
+    "prefix": "wt",
+    "body": ["while(true) {$1}"]
   },
   "and": {
     "prefix": "and",
@@ -85,7 +109,15 @@
   },
   "equal": {
     "prefix": "e",
-    "body": ["$1 = $2"]
+    "body": ["$1 = $2;"]
+  },
+  "plus equal": {
+    "prefix": "ae",
+    "body": ["$1 += $2;"]
+  },
+  "devide equal": {
+    "prefix": "de",
+    "body": ["$1 /= $2;"]
   },
   "double equal": {
     "prefix": "ee",
@@ -125,7 +157,7 @@
   },
   "multiply": {
     "prefix": "m",
-    "body": ["$1 * $2 "]
+    "body": ["$1 * $2"]
   },
   "division": {
     "prefix": "d",
@@ -166,7 +198,7 @@
   },
   "function": {
     "scope": "typescript,javascript,typescriptreact,javascriptreact,json",
-    "prefix": "f",
+    "prefix": "fn",
     "body": ["($1) => $2"]
   },
   "async function": {
@@ -291,74 +323,12 @@
     "prefix": "frag",
     "body": ["<>$1</>"]
   },
-  "String": {
-    "scope": "cpp",
-    "prefix": "st",
-    "body": ["string ${1:name};", "$0"]
-  },
-  "String equal": {
-    "scope": "cpp",
-    "prefix": "se",
-    "body": ["string ${1:name} = ${2:value};", "$0"]
-  },
-  "Int": {
-    "scope": "cpp",
-    "prefix": "in",
-    "body": ["int ${1:name};", "$0"]
-  },
-  "Bool": {
-    "scope": "cpp",
-    "prefix": "bo",
-    "body": ["bool ${1:name};", "$0"]
-  },
-  "Bool equal": {
-    "scope": "cpp",
-    "prefix": "be",
-    "body": ["bool ${1:name} = ${2:value};", "$0"]
-  },
-  "Int equal": {
-    "scope": "cpp",
-    "prefix": "ie",
-    "body": ["int $1 = $2;", "$0"]
-  },
-  "Include iostream": {
-    "scope": "cpp",
-    "prefix": "icis",
-    "body": ["#include <iostream>", "$0"]
-  },
-  "Include string": {
-    "scope": "cpp",
-    "prefix": "icst",
-    "body": ["#include <string>", "$0"]
-  },
-  "Using namespace std;": {
-    "scope": "cpp",
-    "prefix": "uns",
-    "body": ["using namespace std;", "$0"]
-  },
-  "arr": {
-    "scope": "cpp",
-    "prefix": "arr",
-    "body": ["${1:arr}[${2:i}]"]
-  },
-  "Function": {
-    "scope": "cpp",
+  "false": {
     "prefix": "f",
-    "body": ["${1:type} ${2:func}($3)", "{", "    ${4:code}", "}"]
+    "body": ["false"]
   },
-  "template": {
-    "scope": "cpp",
-    "prefix": "!",
-    "body": [
-      "#include <string>",
-      "#include <iostream>",
-      "",
-      "using namespace std;",
-      "",
-      "int main()",
-      "{",
-      "    return 0;",
-      "}"
-    ]
+  "true": {
+    "prefix": "t",
+    "body": ["true"]
   }
 }

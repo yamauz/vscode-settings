@@ -1,6 +1,5 @@
 {
   "files.encoding": "utf8bom",
-  "window.zoomLevel": -1,
   "emmet.includeLanguages": {
     "javascript": "javascriptreact",
     "vue-html": "html"
@@ -11,18 +10,17 @@
     },
     "jsx": {
       "self_closing_tag": true
-    }
+    },
+    "javascript": "jsx"
   },
   // システムのclipboardにコピー
   "vim.useSystemClipboard": true,
   "vim.hlsearch": true,
   // easymotion
   "vim.leader": "<space>",
+  "vim.statusBarColorControl ": false,
   "vim.easymotion": true,
   "vim.easymotionKeys": "sdfghjkl",
-  // "vim.easymotionMarkerBackgroundColor": "#ffffff",
-  // "vim.easymotionMarkerForegroundColorOneChar": "red",
-  // "vim.easymotionMarkerForegroundColorTwoChar": "green",
   "vim.easymotionMarkerForegroundColorOneChar": "rgba(0,240,170,0.9)", //一文字目の色
   "vim.easymotionMarkerForegroundColorTwoChar": "rgba(0,240,170,0.9)", //二文字目の色
   "vim.easymotionMarkerBackgroundColor": "", //背景色
@@ -46,18 +44,25 @@
   // "editor.quickSuggestions": false,
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
-  "workbench.colorTheme": "FireFly Pro Midnight",
-  "workbench.activityBar.visible": true,
+  "workbench.colorTheme": "Monokai",
   "editor.minimap.enabled": false,
-  "workbench.statusBar.visible": true,
   "markdown-checkbox.typeOfBulletPoint": "-",
   "glassit.alpha": 245,
   "powershell.startAutomatically": false,
   "editor.formatOnSave": true,
   // "editor.defaultFormatter": "esbenp.prettier-vscode",
-  // "[javascript]": {
-  //   "editor.defaultFormatter": "persoderlind.vscode-phpcbf"
-  // }
+  // "editor.codeActionsOnSave": [
+  //   "source.fixAll.format",
+  //   "source.fixAll.eslint"
+  // ],
+  // "editor.codeActionsOnSave": {
+  //   "source.fixAll.eslint": true,
+  //   "source.fixAll": true
+  // },
+  // "eslint.validate": [
+  //   "typescript",
+  //   "typescriptreact"
+  // ],
   "C_Cpp.intelliSenseCacheSize": 0,
   "editor.acceptSuggestionOnCommitCharacter": false,
   "terminal.integrated.rendererType": "dom",
@@ -138,7 +143,7 @@
   "editor.renderWhitespace": "all",
   "editor.fontFamily": "Input, Consolas, 'Courier New', monospace",
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.json-language-features"
   },
   "[cpp]": {
     "editor.defaultFormatter": "xaver.clang-format"
@@ -146,5 +151,29 @@
   "editor.snippetSuggestions": "top",
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    // "editor.formatOnSave": true,
+    // "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  // "[javascript]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  // "[typescript]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  "workbench.statusBar.visible": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "window.zoomLevel": -1,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // "prettier.disableLanguages": [
+  //   "typescript-react",
+  //   "javascript",
+  //   "json"
+  // ]
 }
