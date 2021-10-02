@@ -1,0 +1,94 @@
+
+snippet jkif "if" iA
+if($1) {
+	$2
+}
+endsnippet
+
+snippet jkie "if ===" iA
+if($1 === $2) {
+	$3
+}
+endsnippet
+
+snippet jkin "if !==" iA
+if($1 !== $2) {
+	$3
+}
+endsnippet
+
+####################################
+# operator / boolean
+####################################
+
+snippet jkoe "=" iA
+$1 = $2
+endsnippet
+
+snippet jkow "===" iA
+$1 === $2
+endsnippet
+
+snippet jkot "this" iA
+this.$1
+endsnippet
+
+snippet jkon "new" iA
+new $1
+endsnippet
+
+snippet jkop "+" iA
+$1 + $2
+endsnippet
+
+snippet jkom "-" iA
+$1 - $2
+endsnippet
+
+snippet jkoa "&&" iA
+$1 && $2
+endsnippet
+
+snippet jkoo "||" iA
+$1 || $2
+endsnippet
+
+snippet jkbt "true" iA
+true
+endsnippet
+	
+snippet jkbf "false" iA
+false
+endsnippet
+
+snippet jkj "double quotation" iA
+"$1"
+endsnippet
+
+snippet jkh "curly brace" iA
+{$1}
+endsnippet
+
+snippet jku "brackts" iA
+[$1]
+endsnippet
+
+snippet jk, "angle brackts" iA
+<$1>
+endsnippet
+
+snippet jkn "parenthesis" iA
+($1)
+endsnippet
+
+snippet jkp "property" iA
+$1: $2
+endsnippet
+
+snippet jkr "return" iA
+return ($1)
+endsnippet
+
+snippet jky "template literals" iA
+\`$1\`
+endsnippet

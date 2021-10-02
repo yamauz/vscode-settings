@@ -1,5 +1,9 @@
 {
-  "files.encoding": "utf8bom",
+  // "files.encoding": "utf8bom",
+  "MarkdownPaste.path": "./images/",
+  "MarkdownPaste.silence": true,
+  "vscode-neovim.useWSL": true,
+  "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
   "emmet.includeLanguages": {
     "javascript": "javascriptreact",
     "vue-html": "html"
@@ -18,9 +22,121 @@
   "vim.hlsearch": true,
   // easymotion
   "vim.leader": "<space>",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "leader",
+        "p"
+      ],
+      "commands": [
+        "reactpreview.open"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "w"
+      ],
+      "commands": [
+        "workbench.action.files.save"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "s"
+      ],
+      "after": [
+        "leader",
+        "leader",
+        "s"
+      ]
+    },
+    // emmet split join tag
+    {
+      "before": [
+        "leader",
+        "e",
+        "s"
+      ],
+      "commands": [
+        "editor.emmet.action.splitJoinTag"
+      ]
+    },
+    // emmet expand
+    {
+      "before": [
+        "leader",
+        "e",
+        "e"
+      ],
+      "commands": [
+        "editor.emmet.action.expandAbbreviation"
+      ]
+    },
+    // emmet delete tag
+    {
+      "before": [
+        "leader",
+        "e",
+        "d"
+      ],
+      "commands": [
+        "editor.emmet.action.removeTag"
+      ]
+    },
+    // organize import
+    {
+      "before": [
+        "leader",
+        "i",
+      ],
+      "commands": [
+        {
+          "command": "editor.action.sourceAction",
+          "args": {
+            "kind": "source.addMissingImports",
+            "apply": "first"
+          }
+        }
+      ]
+    },
+    // organize import
+    {
+      "before": [
+        "leader",
+        "o",
+      ],
+      "commands": [
+        "editor.action.organizeImports"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "s"
+      ],
+      "after": [
+        "leader",
+        "leader",
+        "s"
+      ]
+    },
+    // select block
+    {
+      "before": [
+        "@"
+      ],
+      "after": [
+        "V",
+        "$",
+        "%",
+      ]
+    },
+  ],
   "vim.statusBarColorControl ": false,
   "vim.easymotion": true,
-  "vim.easymotionKeys": "sdfghjkl",
+  "vim.easymotionKeys": "sdfghjkl;",
   "vim.easymotionMarkerForegroundColorOneChar": "rgba(0,240,170,0.9)", //一文字目の色
   "vim.easymotionMarkerForegroundColorTwoChar": "rgba(0,240,170,0.9)", //二文字目の色
   "vim.easymotionMarkerBackgroundColor": "", //背景色
@@ -39,30 +155,19 @@
   "workbench.startupEditor": "newUntitledFile",
   "editor.suggest.maxVisibleSuggestions": 5,
   "editor.suggest.snippetsPreventQuickSuggestions": false,
-  // "editor.tabCompletion": true,
-  // "editor.snippetSuggestions": "none",
-  // "editor.quickSuggestions": false,
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
-  "workbench.colorTheme": "Monokai",
+  "workbench.colorTheme": "FireFly Pro Midnight",
   "editor.minimap.enabled": false,
   "markdown-checkbox.typeOfBulletPoint": "-",
   "glassit.alpha": 245,
-  "powershell.startAutomatically": false,
+  // "powershell.startAutomatically": false,
+  // "powershell.showIntegratedConsoleOnStartup": false,
+  "powershell.integratedConsole.showOnStartup": false,
   "editor.formatOnSave": true,
-  // "editor.defaultFormatter": "esbenp.prettier-vscode",
-  // "editor.codeActionsOnSave": [
-  //   "source.fixAll.format",
-  //   "source.fixAll.eslint"
-  // ],
-  // "editor.codeActionsOnSave": {
-  //   "source.fixAll.eslint": true,
-  //   "source.fixAll": true
-  // },
-  // "eslint.validate": [
-  //   "typescript",
-  //   "typescriptreact"
-  // ],
+  "editor.codeActionsOnSave": [
+    "source.addMissingImports"
+  ],
   "C_Cpp.intelliSenseCacheSize": 0,
   "editor.acceptSuggestionOnCommitCharacter": false,
   "terminal.integrated.rendererType": "dom",
@@ -142,6 +247,9 @@
   ],
   "editor.renderWhitespace": "all",
   "editor.fontFamily": "Input, Consolas, 'Courier New', monospace",
+  "[powershell]": {
+    "editor.defaultFormatter": "ms-vscode.powershell"
+  },
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
@@ -149,20 +257,9 @@
     "editor.defaultFormatter": "xaver.clang-format"
   },
   "editor.snippetSuggestions": "top",
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-    // "editor.formatOnSave": true,
-    // "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
-  // "[javascript]": {
-  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
-  // },
-  // "[typescript]": {
-  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
-  // },
   "workbench.statusBar.visible": true,
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -171,9 +268,21 @@
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  // "prettier.disableLanguages": [
-  //   "typescript-react",
-  //   "javascript",
-  //   "json"
-  // ]
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workspaceExplorer.workspaceStorageDirectory": "C:\\Users\\yamau\\dev\\.workspaces",
+  "workspaceSidebar.folder": "C:\\Users\\yamau\\dev\\.workspaces",
+  "pasteImage.path": "${currentFileDir}/image",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "explorer.confirmDragAndDrop": false,
+  "redhat.telemetry.enabled": true,
+  "yaml.format.enable": true,
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always"
 }

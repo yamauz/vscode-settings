@@ -1,0 +1,417 @@
+snippet jkaw "await" iA
+await $1
+endsnippet
+
+####################################
+# jest 
+####################################
+
+snippet jk;jf "jest.fn()" iA
+jest.fn($1)
+endsnippet
+
+snippet jk;jt "jest test" iA
+test("$1", () => {
+  $2
+});
+endsnippet
+
+snippet jk;je "jest expect" iA
+expect($1).$2
+endsnippet
+
+snippet jk;jbe "jest beforEach" iA
+beforeEach(() => {
+  $1
+});
+endsnippet
+
+snippet jk;jae "jest afterEach" iA
+afterEach(() => {
+  $1
+});
+endsnippet
+
+####################################
+# module 
+####################################
+
+snippet jkmi "import" iA
+import $1 from "$2"
+endsnippet
+
+snippet jkmreact "import react" iA
+import React, { useState, useCallback, useRef, useEffect } from "react";
+endsnippet
+
+snippet jkmredux "import redux" iA
+import { useSelector, useDispatch } from "react-redux";
+endsnippet
+
+snippet jkme "export" iA
+export $1 
+endsnippet
+
+####################################
+# style 
+####################################
+
+snippet jksbr "border red" iA
+border="solid 1px red"
+endsnippet
+
+snippet jksbb "border blue" iA
+border="solid 1px blue"
+endsnippet
+
+snippet jksbw "border white" iA
+border="solid 1px white"
+endsnippet
+
+snippet jkswh "width 100%" iA
+w="100%"
+endsnippet
+
+snippet jkswp "width px" iA
+w="$1px"
+endsnippet
+
+snippet jkshh "height 100%" iA
+h="100%"
+endsnippet
+
+snippet jkshp "height px" iA
+h="$1px"
+endsnippet
+
+snippet jkscr "color red" iA
+color="red"
+endsnippet
+
+snippet jkscb "color blue" iA
+color="blue"
+endsnippet
+
+snippet jkscw "color white" iA
+color="white"
+endsnippet
+
+snippet jkspx "px" iA
+px={$1}
+endsnippet
+
+snippet jkspy "py" iA
+py={$1}
+endsnippet
+
+snippet jksgw "bg white" iA
+bg="white"
+endsnippet
+
+snippet jksgr "bg red" iA
+bg="${1:red}"
+endsnippet
+
+
+####################################
+# class 
+####################################
+
+snippet jkkk "class" iA
+class $1 {
+  $2
+}
+endsnippet
+
+snippet jkkc "constractor" iA
+constructor($1){
+  $2
+}
+endsnippet
+
+snippet jkkm "method" iA
+$1($2){
+  $3
+}
+endsnippet
+
+####################################
+# console 
+####################################
+
+snippet jkl "console.log" iA
+console.log($1)
+endsnippet
+
+snippet jkdl "console.log" iA
+console.log("$1", $1)
+endsnippet
+
+snippet jkde "console.error" iA
+console.error($1)
+endsnippet
+
+snippet jkdi "console.info" iA
+console.info($1)
+endsnippet
+
+####################################
+# function 
+####################################
+
+snippet jkfn "function" iA
+($1)$2 => {
+  $3
+}
+endsnippet
+
+snippet jkfa "async function" iA
+async ($1)$2 => {
+$3
+}
+endsnippet
+
+####################################
+# const 
+####################################
+
+snippet jkce "const" iA
+const $1 = $2
+endsnippet
+
+snippet jkcf "const function" iA
+const $1 = ($2) => {
+  $3
+}
+endsnippet
+
+snippet jkca "const async function" iA
+const $1 = async ($2) => {
+  $3
+}
+endsnippet
+
+snippet jkcus "const useSelector" iA
+const $1 = useSelector((state: RootState) => state.$2.$1);
+endsnippet
+
+snippet jkcud "const useDispatch" iA
+const dispatch = useDispatch();
+endsnippet
+
+####################################
+# event 
+####################################
+
+snippet jkec "onclick" iA
+onClick={(e) => {$1}}
+endsnippet
+
+
+####################################
+# redux dispatch 
+####################################
+
+snippet jk;dd "redux dispatch" iA
+dispatch(reducer.actions.$1($2));
+endsnippet
+
+####################################
+# if block
+####################################
+
+snippet jkif "if" iA
+if($1) {
+	$2
+}
+endsnippet
+
+snippet jkie "if ===" iA
+if($1 === $2) {
+	$3
+}
+endsnippet
+
+snippet jkin "if !==" iA
+if($1 !== $2) {
+	$3
+}
+endsnippet
+
+####################################
+# operator / boolean
+####################################
+
+snippet jkoe "=" iA
+$1 = $2
+endsnippet
+
+snippet jkow "===" iA
+$1 === $2
+endsnippet
+
+snippet jkot "this" iA
+this.$1
+endsnippet
+
+snippet jkon "new" iA
+new $1
+endsnippet
+
+snippet jkop "+" iA
+$1 + $2
+endsnippet
+
+snippet jkom "-" iA
+$1 - $2
+endsnippet
+
+snippet jkoa "&&" iA
+$1 && $2
+endsnippet
+
+snippet jkoo "||" iA
+$1 || $2
+endsnippet
+
+snippet jkbt "true" iA
+true
+endsnippet
+	
+snippet jkbf "false" iA
+false
+endsnippet
+
+snippet jkj "double quotation" iA
+"$1"
+endsnippet
+
+snippet jkh "curly brace" iA
+{$1}
+endsnippet
+
+snippet jku "brackts" iA
+[$1]
+endsnippet
+
+snippet jk, "angle brackts" iA
+<$1>
+endsnippet
+
+snippet jkn "parenthesis" iA
+($1)
+endsnippet
+
+snippet jkp "property" iA
+$1: $2
+endsnippet
+
+snippet jkr "return" iA
+return ($1)
+endsnippet
+
+snippet jky "template literals" iA
+\`$1\`
+endsnippet
+
+####################################
+# JSX 
+####################################
+
+snippet "kld "div" iA
+<div>
+$1
+</div>
+endsnippet
+
+snippet "klj "user tag" iA
+<$1>
+$2
+</$1>
+endsnippet
+
+snippet "klv "VStack" iA
+<VStack $1>
+$2
+</VStack>
+endsnippet
+
+snippet "klh "HStack" iA
+<HStack $1>
+$2
+</HStack>
+endsnippet
+
+snippet "klc "Center" iA
+<Center $1>
+$2
+</Center>
+endsnippet
+
+####################################
+# color 
+####################################
+
+snippet "]]b "blue" iA
+blue
+endsnippet
+
+snippet "]]r "red" iA
+red
+endsnippet
+
+snippet "]]w "white" iA
+white
+endsnippet
+
+snippet "]]g "gray" iA
+gray
+endsnippet
+
+
+
+####################################
+# typescript 
+####################################
+
+snippet jk;tr "readonly" iA
+readonly $1 
+endsnippet
+
+snippet jk;tk "keyof" iA
+keyof $1 
+endsnippet
+
+snippet jk;tt "type" iA
+type $1 = 
+endsnippet
+
+snippet jk;te "extends" iA
+extends
+endsnippet
+
+snippet jk;ti "interface" iA
+interface $1 {
+  $2
+} 
+endsnippet
+
+snippet ::n "number type" iA
+:number
+endsnippet
+
+snippet ::s "string type" iA
+:string
+endsnippet
+
+snippet ::b "boolean type" iA
+:boolean
+endsnippet
+
+snippet ::u "unknown type" iA
+:unknown
+endsnippet
+
+snippet ::v "void type" iA
+:void
+endsnippet

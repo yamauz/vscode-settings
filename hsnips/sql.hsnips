@@ -1,0 +1,144 @@
+####################################
+# select 
+####################################
+snippet jkss "select" iA
+SELECT
+  ${1:*}
+FROM
+  $2
+endsnippet
+
+
+####################################
+# function 
+####################################
+
+snippet jkfco "count" iA
+COUNT($1)
+endsnippet
+
+snippet jkfca "concat" iA
+CONCAT($1)
+endsnippet
+
+snippet jkfi "if null" iA
+IFNULL($1)
+endsnippet
+
+snippet jkfl "length" iA
+LENGTH($1)
+endsnippet
+
+snippet jkfma "max" iA
+MAX($1)
+endsnippet
+
+snippet jkfmi "min" iA
+MIN($1)
+endsnippet
+
+snippet jkfa "avg" iA
+AVG($1)
+endsnippet
+
+snippet jkfsm "sum" iA
+SUM($1)
+endsnippet
+
+snippet jkfsb "substring" iA
+SUBSTRING($1)
+endsnippet
+
+
+####################################
+# where 
+####################################
+snippet jkww "where" iA
+WHERE $1
+endsnippet
+
+snippet jkwl "like" iA
+LIKE "$1%" 
+endsnippet
+
+snippet jkwa "and" iA
+AND $1 
+endsnippet
+
+snippet jkwo "or" iA
+OR $1 
+endsnippet
+
+snippet jkwb "between" iA
+BETWEEN $1 AND $2
+endsnippet
+
+snippet jkwi "in" iA
+IN ("$1")
+endsnippet
+
+snippet jkwI "is" iA
+IS
+endsnippet
+
+snippet jkwn "not" iA
+NOT 
+endsnippet
+
+snippet jkwN "null" iA
+NULL 
+endsnippet
+
+####################################
+# order by 
+####################################
+
+snippet jkoba "order by asc" iA
+ORDER BY
+  $1 ASC
+endsnippet
+
+snippet jkobd "order by desc" iA
+ORDER BY
+  $1 DESC
+endsnippet
+
+####################################
+# jkgb - grounp by 
+####################################
+
+snippet jkgb "group by" iA
+GROUP BY
+  $1
+endsnippet
+
+####################################
+# jkk - ketsugou (join) 
+####################################
+
+snippet jkkij "inner join" iA
+INNER JOIN $1 ON $2
+endsnippet
+
+####################################
+# misc 
+####################################
+snippet jkl "limit" iA
+LIMIT
+  ${1:10}
+endsnippet
+
+snippet jkd "distinct" iA
+DISTINCT($1)
+endsnippet
+
+snippet jka "as" iA
+AS $1
+endsnippet
+
+snippet jkc "case" iA
+  CASE
+    WHEN $1 THEN $2
+    ELSE $3
+  END 
+endsnippet

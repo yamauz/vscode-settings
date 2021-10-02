@@ -65,10 +65,6 @@
   },
   {
     "key": "ctrl+n",
-    "command": "explorer.newFile"
-  },
-  {
-    "key": "ctrl+n",
     "command": "-workbench.action.files.newUntitledFile"
   },
   {
@@ -129,13 +125,6 @@
     "key": "ctrl+shift+enter",
     "command": "-editor.action.insertLineBefore",
     "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "alt+c",
-    "command": "editor.action.insertSnippet",
-    "args": {
-      "name": "const"
-    },
   },
   {
     "key": "alt+f",
@@ -240,16 +229,6 @@
     "when": "editorLangId == 'markdown'"
   },
   {
-    "key": "ctrl+p",
-    "command": "markdown-preview-enhanced.openPreviewToTheSide",
-    "when": "editorLangId == 'markdown'"
-  },
-  {
-    "key": "ctrl+k v",
-    "command": "-markdown-preview-enhanced.openPreviewToTheSide",
-    "when": "editorLangId == 'markdown'"
-  },
-  {
     "key": "ctrl+alt+s",
     "command": "extension.changeCase.snake"
   },
@@ -260,16 +239,6 @@
   {
     "key": "ctrl+alt+c",
     "command": "extension.changeCase.camel"
-  },
-  {
-    "key": "ctrl+j",
-    "command": "expand_region",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+w",
-    "command": "-expand_region",
-    "when": "editorTextFocus"
   },
   {
     "key": "ctrl+shift+pageup",
@@ -334,5 +303,37 @@
   {
     "key": "ctrl+shift+k",
     "command": "editor.emmet.action.balanceIn"
+  },
+  {
+    "key": "ctrl+q",
+    "command": "workbench.action.openRecent"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "-workbench.action.openRecent"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "workbench.view.explorer",
+    "when": "viewContainer.workbench.view.explorer.enabled"
+  },
+  {
+    "key": "ctrl+shift+e",
+    "command": "-workbench.view.explorer",
+    "when": "viewContainer.workbench.view.explorer.enabled"
+  },
+  {
+    "key": "ctrl+z",
+    "command": "-vscode-neovim.send",
+    "when": "editorTextFocus && neovim.ctrlKeysNormal && neovim.init && neovim.mode != 'insert'"
+  },
+  {
+    "key": "tab",
+    "command": "-acceptSelectedSuggestion",
+    "when": "suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "explorer.newFile"
   },
 ]
